@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `products` (
+  `productId` INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  `name` VARCHAR(255) NOT NULL,
+  `imageUrl` VARCHAR(500),
+  `category` VARCHAR(100),
+  `status` TINYINT NOT NULL DEFAULT '1'
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
