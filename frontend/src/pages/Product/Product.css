@@ -1,0 +1,13 @@
+.product {
+  padding: 2rem;
+}
+
+.product ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
