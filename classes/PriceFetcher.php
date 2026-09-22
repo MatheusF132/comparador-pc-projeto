@@ -12,6 +12,7 @@ class PriceFetcher
     {
         $prices = [];
 
+        //busca os preços de cada loja
         foreach (self::$stores as $store => $endpoint) {
             $data = self::request($endpoint . urlencode($productName));
 
@@ -37,6 +38,7 @@ class PriceFetcher
 
         $response = curl_exec($curl);
         curl_close($curl);
+        //traduz a resposta do formato JSON para uma array associativa do PHP
 
         return $response ? json_decode($response, true) : null;
     }

@@ -14,7 +14,7 @@ function loadEnv(string $path): void
         $_ENV[$key] = $value;
     }
 }
-
+// monta o caminho da pasta onde esse arquivo (init.php) está
 $path = realpath(dirname(__FILE__)) . DIRECTORY_SEPARATOR;
 
 loadEnv("{$path}/../.env");

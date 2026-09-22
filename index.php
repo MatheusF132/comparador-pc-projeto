@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+//Liga o autoload e lê o .env
 require_once __DIR__ . '/includes/init.php';
 
 $busca = trim($_GET['busca'] ?? '');
@@ -20,15 +21,15 @@ $produtos = $busca !== '' ? Product::search($busca) : Product::all();
 
   <header class="header">
     <a class="logo" href="index.php">Precinho</a>
+      <form class="search-bar" method="GET" action="index.php">
+      <input type="text" name="busca" placeholder="Buscar peça de PC (ex: RTX 4070)" value="<?= htmlspecialchars($busca) ?>" />
+      <button type="submit">Buscar</button>
+    </form>
   </header>
 
   <main class="home">
     <h1>Ache o menor preço em peças de PC</h1>
 
-    <form class="search-bar" method="GET" action="index.php">
-      <input type="text" name="busca" placeholder="Buscar peça de PC (ex: RTX 4070)" value="<?= htmlspecialchars($busca) ?>" />
-      <button type="submit">Buscar</button>
-    </form>
   </main>
 
   <div class="results">
