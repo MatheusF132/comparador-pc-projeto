@@ -12,6 +12,9 @@ body {
 .header {
   padding: 1rem 2rem;
   background: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header .logo {
@@ -29,8 +32,10 @@ body {
 .search-bar {
   display: flex;
   gap: 0.5rem;
-  max-width: 480px;
+  max-width: 700px;
   margin: 1.5rem auto 0;
+  flex: 1;
+
 }
 
 .search-bar input {
