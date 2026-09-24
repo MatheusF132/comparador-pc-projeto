@@ -66,11 +66,13 @@ class PriceFetcher
     $code = $item['code'] ?? '';
     $friendlyName = $item['friendlyName'] ?? '';
     $link = $code ? "https://www.kabum.com.br/produto/{$code}/{$friendlyName}" : '';
+    $imagem = $item['image'] ?? '';
 
     return [
         'store' => 'Kabum',
         'value' => (float) $preco,
         'url' => $link,
+        'image' => $image,
     ];
 }
 }
