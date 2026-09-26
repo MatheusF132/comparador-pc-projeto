@@ -72,7 +72,7 @@ class PriceFetcher
         'store' => 'Kabum',
         'value' => (float) $preco,
         'url' => $link,
-        'image' => $image,
+        'image' => $imagem,
     ];
 }
 }
