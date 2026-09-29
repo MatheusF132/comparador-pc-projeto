@@ -1,0 +1,1 @@
+Este é um projeto pessoal meu para eu me fortificar e buscar aperfeiçoamento na linguagem PHP. O projeto consiste em buscar os melhores preços de perifericos e componentes de PC para que a pessoa possa se informar qual o melhor custo beneficio e comparar o quão vale a pena comprar aquilo no momento
