@@ -1,5 +1,5 @@
 <?php
-
+//Evita ter que escrever um require manual pra cada classe usada
 spl_autoload_register(function ($class) {
     $file = __DIR__ . '/' . $class . '.php';
 
