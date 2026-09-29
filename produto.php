@@ -6,7 +6,8 @@ require_once __DIR__ . '/includes/init.php';
 
 $id = (int) ($_GET['id'] ?? 0);
 $produto = Product::find($id);
-$precos = $produto ? PriceFetcher::fetch($produto['name']) : [];
+$precoSalvo = $produto ? PriceHistory::latestFor($produto['productId']) : null;
+$precos = $precoSalvo ? [$precoSalvo] : []; 
 
 ?>
 <!DOCTYPE html>

@@ -15,4 +15,14 @@ class PriceHistory
             'imageUrl' => $price['image'] ?? null,
             ]);
     }
+    public static function latestFor(int $productId): ?array
+{
+    $stmt = Database::connect()->prepare(
+        'SELECT * FROM price_history WHERE productId = :productId ORDER BY fetchedAt DESC LIMIT 1'
+    );
+    $stmt->execute(['productId' => $productId]);
+
+    $preco = $stmt->fetch();
+    return $preco ?: null;
+}
 }
