@@ -34,7 +34,7 @@ $precos = $precoSalvo ? [$precoSalvo] : [];
         <?php foreach ($precos as $preco): ?>
           <li>
             <a href="<?= htmlspecialchars($preco['url']) ?>" target="_blank" rel="noreferrer">
-              <?= htmlspecialchars($preco['store']) ?> — R$ <?= number_format($preco['value'], 2, ',', '.') ?>
+              <?= htmlspecialchars($preco['store']) ?> — R$ <?= number_format((float)$preco['value'], 2, ',', '.') ?>
             </a>
           </li>
         <?php endforeach; ?>
