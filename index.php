@@ -16,6 +16,7 @@ $produtos = $busca !== '' ? Product::search($busca) : Product::all();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <title><?= htmlspecialchars($_ENV['APP_NAME']) ?></title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/main.js" defer></script>
 </head>
 
 <body>
