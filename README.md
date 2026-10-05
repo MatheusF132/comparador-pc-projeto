@@ -10,7 +10,8 @@ Por enquanto essa é a estrutura da tabela price_history que é onde guarda o hi
 \
 \
 Por enquanto esse é o visual e a estrutura de arquivos do site: <img width="1919" height="990" alt="image" src="https://github.com/user-attachments/assets/f06d67bc-41f4-47a6-85c1-134a98cd1c92" /> 
-<img width="225" height="494" alt="image" src="https://github.com/user-attachments/assets/a25345e1-2885-4a7b-825a-8950ebfac02b" />
+<img width="232" height="589" alt="image" src="https://github.com/user-attachments/assets/3ad1f3f7-d6cf-4859-ab25-b8e7368a7ba1" />
+
 
 
 
