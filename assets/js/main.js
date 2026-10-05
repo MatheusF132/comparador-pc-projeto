@@ -1,2 +1,6 @@
 const formulario = document.querySelector('.search-bar');
-console.log(formulario);
+const resultados = document.querySelector('.results');
+formulario.addEventListener('submit', function (evento) {
+    evento.preventDefault();
+    console.log('Formulário enviado!');
+});
