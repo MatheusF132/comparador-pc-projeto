@@ -24,7 +24,7 @@ $produtos = $busca !== '' ? Product::search($busca) : Product::all();
   <header class="header">
     <a class="logo" href="index.php">Precinho</a>
       <form class="search-bar" method="GET" action="index.php">
-      <input type="text" name="busca" placeholder="Buscar peça de PC (ex: RTX 4070)" value="<?= htmlspecialchars($busca) ?>" />
+      <input type="text" id="busca" name="busca" placeholder="Buscar peça de PC (ex: RTX 4070)" value="<?= htmlspecialchars($busca) ?>" />
       <button type="submit">Buscar</button>
     </form>
   </header>
